@@ -17,11 +17,24 @@ public class NameToHeight {
 	 * and output the results. Be sure to handle the case where the map does not
 	 * contain a specified name.
 	 */
+	
 	public static void main(String[] args) {
+		String name = " ";
+
 		Scanner in = new Scanner(System.in);
+Map<String, Double> member = new HashMap<>();
+member.put("Rachel", 5.5);
+member.put("Xenaira", 5.5);
+member.put("Lea", 5.4);
 
-		// FIXME
-		throw new NotYetImplementedException();
+while  (!(name.equals ("quit"))) {
+System.out.println("Name:");
+name = in.next();
+System.out.println (member.get(name));
 
-	}
+
+}
+		
+
+	}	
 }
